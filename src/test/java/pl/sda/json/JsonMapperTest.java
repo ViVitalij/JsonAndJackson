@@ -17,9 +17,8 @@ public class JsonMapperTest {
     @Test
     public void test1() throws IOException {
         String jsonToDeserialize = "{\"firstName\":\"Mateusz\",\"lastName\":\"Loska\",\"addresses\":{\"Work\":{\"street\":\"Al.Solidarnosci\",\"code\":\"00-020\",\"city\":\"Warszawa\"},\"Home\":{\"street\":\"Sw.Marcin\",\"code\":\"60-070\",\"city\":\"Poznan\"}},\"childrenNames\":[\"Mateuszek\",\"Anusia\"]}\n";
+
         ObjectMapper objectMapper = new ObjectMapper();
-
-
         User user = objectMapper.readValue(jsonToDeserialize, User.class);
 
         Assert.assertEquals("Mateusz", user.getFirstName());
