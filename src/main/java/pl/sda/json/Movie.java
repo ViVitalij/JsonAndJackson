@@ -1,7 +1,5 @@
 package pl.sda.json;
 
-import java.util.Map;
-
 /**
  * Created by m.losK on 2017-03-02.
  */
